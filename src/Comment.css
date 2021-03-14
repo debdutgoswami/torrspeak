@@ -1,0 +1,42 @@
+@import './fonts.css';
+
+.message {
+  padding-bottom: 8px;
+}
+
+.messageThread {
+  background-color: #fcfcfc;
+  width: 380px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 16px;
+  overflow: hidden;
+  filter: drop-shadow(0px 8px 16px rgba(17, 17, 17, 0.04));
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.messageAuthor {
+  text-align: left;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.messageBody {
+  text-align: left;
+  font-family: 'RocknRoll One', sans-serif;
+  word-wrap: break-word;
+}
+
+.reply {
+  background-color: #eff0f7;
+  border-radius: 16px;
+  border-width: 0px;
+  height: 48px;
+  width: 332px;
+  padding: 6px 24px;
+  word-wrap: break-word;
+}
