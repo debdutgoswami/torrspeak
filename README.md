@@ -9,7 +9,7 @@ Don't fear, when 𝐓𝐨𝐫𝐫𝐬𝐩𝐞𝐚𝐤 is here!
 𝐓𝐨𝐫𝐫𝐬𝐩𝐞𝐚𝐤 helps keep your notes data *neat and clean*. Write comments/reviews at different places on a webpage. Provides co-ordinated reply to your friends' comments. See what part of the content your friends are interacting with. After the discussion is over, users lying in their respective rooms, can download the whole convo as a full-page screenshot for later access! It's being run on Linode for faster & seamless access! 
 
 ## How we built it
-Pronounce is crafted with ❤️. It's built on Reactjs. The backend is running on Flask. It's integrated with Firestore for data storage and web-sockets to communicate between the two. Last but not the least, it's deployed on Linode, so that it can be accessed by people around the world for free, forever across both PC or mobile!
+Torrspeak is crafted with ❤️. It's built on Reactjs. The backend is running on Flask. It's integrated with Firestore for data storage and web-sockets to communicate between the two. Last but not the least, it's deployed on Linode, so that it can be accessed by people around the world for free, forever across both PC or mobile!
 
 ## Challenges we ran into
 This is the 1st time we have used Linode in our project. Being a novice, we took a lot of time configuring it. Also, it was a bit difficult for us to collaborate in a virtual setting but we somehow managed to finish the project on time. :)
