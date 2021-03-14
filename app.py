@@ -1,7 +1,6 @@
 from collections import defaultdict
 from flask import Flask, request
-from flask_socketio import SocketIO, join_room
-from flask_cors import CORS
+from flask_socketio import SocketIO
 from database_connections import db_init, add_message_thread, add_message
 
 from typing import List, Dict, Set, Tuple
