@@ -1,11 +1,16 @@
 from collections import defaultdict
-from flask import Flask, request
+from flask import Flask, request, render_template, send_from_directory
 from flask_socketio import SocketIO
 from database_connections import db_init, add_message_thread, add_message
 
 from typing import List, Dict, Set, Tuple
 
-app = Flask("web_server")
+app = Flask(
+    "web_server",
+    static_folder="build/static",
+    template_folder="build",
+    # root_path="build",
+)
 
 socketio = SocketIO(app, cors_allowed_origins="*")
 
@@ -21,7 +26,12 @@ sids = set()
 # own webserver
 @app.route("/")
 def root_page():
-    return "hello"
+    return render_template("index.html")
+
+
+@app.route("/<path:path>")
+def send(path):
+    return send_from_directory("build", path)
 
 
 @socketio.on("connect")
